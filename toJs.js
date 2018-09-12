@@ -40,7 +40,8 @@ const toJs = (input) => {
   jsStr = jsStr.replace(startPattern, '')
   jsStr = jsStr.replace(endPattern, '')
   jsStr = jsStr.replace(quotePattern, '\'')
-  jsStr = `module.exports = ${jsStr}`
+	jsStr = `module.exports = ${jsStr}
+`
 
   return jsStr
 }

@@ -33,22 +33,22 @@ const run = (name, opts) => {
 
 it('should handle BEM syntax', () => run('bem'))
 
-it('should handle BEMIT syntax using prefix mapping', () => run('bemit', {
-  prefixMap: {
-    'o-': 'o',
-    'c-': 'c',
-    'u-': 'u'
-  }
-}))
+// it('should handle BEMIT syntax using prefix mapping', () => run('bemit', {
+//   prefixMap: {
+//     'o-': 'o',
+//     'c-': 'c',
+//     'u-': 'u'
+//   }
+// }))
 
-it('should handle replace config', () => run('replace', {
-  prefixMap: {
-    'ln-o-': 'o',
-    'ln-c-': 'c',
-    'ln-u-': 'u'
-  },
-  replace: {
-    '@': '_',
-    '\\/': 'of'
-  }
-}))
+// it('should handle replace config', () => run('replace', {
+//   prefixMap: {
+//     'ln-o-': 'o',
+//     'ln-c-': 'c',
+//     'ln-u-': 'u'
+//   },
+//   replace: {
+//     '@': '_',
+//     '\\/': 'of'
+//   }
+// }))

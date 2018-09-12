@@ -87,7 +87,7 @@ module.exports = postcss.plugin('postcss-bemit-to-json', (o) => {
             ]
             setOutput(
               [block, element, `$${modifier}`],
-              `${block}${edel}${element} ${className}`
+              `${className}`
             )
           } else {
             // Element with no modifier
@@ -102,7 +102,7 @@ module.exports = postcss.plugin('postcss-bemit-to-json', (o) => {
           const [block, modifier] = className.split(mdel)
           setOutput(
             [block, `$${modifier}`],
-            `${block} ${className}`
+            className
           )
         } else {
           // Block with no modifier
