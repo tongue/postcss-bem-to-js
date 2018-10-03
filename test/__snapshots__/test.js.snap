@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should handle BEM syntax 1`] = `
+Object {
+  "MyButton": Object {
+    "$": "my-button",
+    "$colorPink": "my-button--color-pink",
+    "$sizeSmall": "my-button--size-small",
+    "icon": Object {
+      "$": "my-button__icon",
+      "$colorBlue": "my-button__icon--color-blue",
+      "$square": "my-button__icon--square",
+    },
+    "infoText": Object {
+      "$": "my-button__info-text",
+    },
+  },
+  "MyButton1A": Object {
+    "$": "my-button-1-a",
+  },
+  "MyButton@sm": Object {
+    "$": "my-button@sm",
+  },
+}
+`;

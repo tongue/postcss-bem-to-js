@@ -4,13 +4,9 @@
     "jest": true
   },
   "rules": {
-    "semi": [2, "never"],
-    "comma-dangle": ["error", {
-      "arrays": "never",
-      "objects": "never",
-      "imports": "never",
-      "exports": "never",
-      "functions": "never"
-    }]
+		quotes: ["error", "double"],
+		arrow-parens: ["error", "as-needed"],
+		comma-dangle: ["error", "never"],
+		function-paren-newline: off
   }
 }
