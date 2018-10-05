@@ -6,7 +6,7 @@ const toJs = input => {
   const inputAsString = jsStringify(input);
   const jsString = `module.exports = ${inputAsString}`;
 
-  return prettier.format(jsString);
+  return prettier.format(jsString, { parser: "flow" });
 };
 
 module.exports = toJs;
